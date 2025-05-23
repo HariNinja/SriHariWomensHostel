@@ -1,42 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sri Hari Women's Hostel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Hari Women's Hostel</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Your existing CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="poster.jpeg" alt="Sri Hari Women's Hostel">
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#facilities">Facilities</a>
-        <a href="#rooms">Rooms</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section id="facilities">
-            <h2>Facilities & Amenities</h2>
-            <div class="facility-grid">
-                <div><img src="icons/wifi.png" alt="Wi-Fi"><p>High Speed Wi-Fi</p></div>
-                <div><img src="icons/security.png" alt="Security"><p>24x7 Security</p></div>
-                <div><img src="icons/camera.png" alt="Camera"><p>Camera Surveillance</p></div>
-                <div><img src="icons/room.png" alt="Furnished"><p>Furnished Rooms</p></div>
-                <div><img src="icons/washing.png" alt="Washing"><p>Washing Machine</p></div>
-                <div><img src="icons/cleaning.png" alt="Housekeeping"><p>Housekeeping</p></div>
-                <div><img src="icons/water.png" alt="Drinking"><p>Drinking Water</p></div>
-                <div><img src="icons/electricity.png" alt="Electricity"><p>Electricity</p></div>
-                <div><img src="icons/sharing.png" alt="Sharing"><p>3/5/6 Sharing</p></div>
-                <div><img src="icons/hotwater.png" alt="Hot Water"><p>Hot Water</p></div>
-                <div><img src="icons/meal.png" alt="Meal"><p>Meal/No Meal</p></div>
-                <div><img src="icons/pg.png" alt="PG"><p>PG Available</p></div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        © 2025 Sri Hari Women's Hostel
-    </footer>
+  <!-- HEADER -->
+  <header>
+    <img src="poster.jpeg" class="poster" alt="Sri Hari Women's Hostel Poster"/>
+  </header>
+
+  <!-- NAVIGATION TABS -->
+  <nav class="tabs">
+    <button onclick="showTab('about')">About</button>
+    <button onclick="showTab('facilities')">Facilities</button>
+    <button onclick="showTab('rooms')">Rooms</button>
+    <button onclick="showTab('gallery')">Gallery</button>
+    <button onclick="showTab('contact')">Contact</button>
+  </nav>
+
+  <!-- ABOUT US -->
+  <section id="about" class="tab active">
+    <h2>About Us</h2>
+    <p>Sri Hari Women's Hostel is a family-run place where every guest is treated like one of our own. Designed for students and working women, it offers a peaceful environment that feels like home.</p>
+    <p><strong>📍 Location:</strong> 
+      <a href="https://maps.app.goo.gl/j5HK1Kj6gNi6hHjA8" target="_blank">
+        Near CHIL SEZ IT Park, Keeranatham, Coimbatore
+      </a>
+    </p>
+    <p><strong>📧 Email:</strong> <a href="mailto:srihariwomenshostel@gmail.com">srihariwomenshostel@gmail.com</a></p>
+    <p><strong>📞 Phone:</strong> <a href="tel:+919487028065">94870 28065</a></p>
+  </section>
+
+  <!-- FACILITIES & AMENITIES -->
+  <section id="facilities" class="tab">
+    <h2>Facilities & Amenities</h2>
+    <div class="facility-grid">
+      <div class="facility-item">
+        <img src="icons/wifi.png" alt="Wi-Fi">
+        <span>High Speed Wi-Fi</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/security.png" alt="Security">
+        <span>24×7 Security</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/camera.png" alt="Camera">
+        <span>24×7 Camera Surveillance</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/bed.png" alt="Rooms">
+        <span>Fully Furnished Rooms</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/washing.png" alt="Washing Machine">
+        <span>Washing Machine</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/housekeeping.png" alt="Housekeeping">
+        <span>Regular Housekeeping</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/water.png" alt="Drinking Water">
+        <span>Purified Drinking Water</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/electricity.png" alt="Electricity">
+        <span>Unbroken Electricity</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/sharing.png" alt="Sharing">
+        <span>3 / 5 / 6 Sharing Facility</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/hotwater.png" alt="Hot Water">
+        <span>24×7 Hot Water</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/meal.png" alt="Meal">
+        <span>With / Without Meal Accommodation</span>
+      </div>
+      <div class="facility-item">
+        <img src="icons/pg.png" alt="PG">
+        <span>Paying Guest Available</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS & TARIFFS -->
+  <section id="rooms" class="tab">
+    <h2>Rooms & Tariffs</h2>
+    <p>3 / 5 / 6 sharing options with flexible food plans. Contact us for the latest pricing.</p>
+  </section>
+
+  <!-- GALLERY (auto-loads from GitHub) -->
+  <section id="gallery" class="tab">
+    <h2>Photo Gallery</h2>
+    <div id="gallery-grid"></div>
+  </section>
+
+  <!-- CONTACT (Google Form Embed) -->
+  <section id="contact" class="tab">
+    <h2>Enquiry Form</h2>
+    <div class="contact-form">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdyRU4bIQ-SK-8DGT1E-QcnIA_BPH-mSmQrTyy2QANxTgn4ew/viewform?embedded=true"
+        loading="lazy"
+        title="Hostel Enquiry Form">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>© 2025 Sri Hari Women's Hostel</footer>
+
+  <!-- TAB SWITCH SCRIPT -->
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    // AUTO-LOAD GALLERY IMAGES
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('gallery-grid');
+      fetch('https://api.github.com/repos/HariNinja/SriHariWomensHostel/contents/gallery')
+        .then(r => r.json())
+        .then(files => {
+          files.filter(f => /\.(jpe?g|png)$/i.test(f.name)).forEach(f => {
+            const img = document.createElement('img');
+            img.src = `https://raw.githubusercontent.com/HariNinja/SriHariWomensHostel/main/gallery/${f.name}`;
+            img.alt = f.name;
+            img.className = 'gallery-thumb';
+            container.appendChild(img);
+          });
+        }).catch(() => {
+          container.innerHTML = '<p style="color:red;">Couldn’t load gallery.</p>';
+        });
+    });
+  </script>
 </body>
 </html>
