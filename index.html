@@ -2,51 +2,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Hari Women's Hostel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sri Hari Women's Hostel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="hero">
-        <img src="blue-header.jpeg" alt="Sri Hari Hostel Poster" class="poster">
-        <div class="hero-buttons">
-            <a href="https://wa.me/919487028065" target="_blank">WhatsApp</a>
-            <a href="tel:+919487028065">Call</a>
-            <a href="https://maps.app.goo.gl/5szWbgHeA3XEb1XW6" target="_blank">View Map</a>
-        </div>
-    </header>
+  <header>
+    <img src="poster.jpeg" class="poster" alt="Sri Hari Women's Hostel Poster"/>
+  </header>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>Sri Hari Women's Hostel is a family-run place where every guest is treated like one of our own. Our hostel is more than just accommodation — it's a community built on trust, care, and comfort. Designed especially for students and working women, we offer a peaceful environment that truly feels like home.</p>
-        <ul>
-            <li>Thoughtfully maintained by women</li>
-            <li>Transparent communication and warm support</li>
-            <li>Safe, clean, and respectful atmosphere</li>
-        </ul>
-    </section>
+  <nav class="tabs">
+    <button onclick="showTab('about')">About</button>
+    <button onclick="showTab('facilities')">Facilities</button>
+    <button onclick="showTab('rooms')">Rooms</button>
+    <button onclick="showTab('rules')">Rules</button>
+    <button onclick="showTab('tariffs')">Tariffs</button>
+    <button onclick="showTab('gallery')">Gallery</button>
+    <button onclick="showTab('contact')">Contact</button>
+  </nav>
 
-    <section class="facilities">
-        <h2>Facilities</h2>
-        <div class="grid">
-            <div>🛏️ New bright building with ventilated rooms</div>
-            <div>🔐 24/7 CCTV and internet security</div>
-            <div>📶 High-speed Internet (Wi-Fi)</div>
-            <div>📦 Attached storage in every room</div>
-            <div>🍽️ With food / without food / Cooking allowed</div>
-            <div>🧼 Weekly cleaning and repair logs maintained</div>
-        </div>
-    </section>
+  <section id="about" class="tab active">
+    <h2>About Us</h2>
+    <p>Sri Hari Women's Hostel is a family-run place where every guest is treated like one of our own. Designed for students and working women, it offers a peaceful environment that feels like home.</p>
+  </section>
 
-    <section class="gallery">
-        <h2>Photo Gallery</h2>
-        <p>Photos coming soon...</p>
-    </section>
+  <section id="facilities" class="tab">
+    <h2>Facilities & Amenities</h2>
+    <ul>
+      <li>🛏️ Ventilated rooms</li>
+      <li>📶 High-speed Wi-Fi</li>
+      <li>🔐 24/7 CCTV</li>
+      <li>🧺 Washing Machine</li>
+      <li>🔥 Water Heater</li>
+      <li>🔋 Power Backup</li>
+    </ul>
+  </section>
 
-    <footer>
-        <p>© 2025 Sri Hari Women's Hostel</p>
-    </footer>
+  <section id="rooms" class="tab">
+    <h2>Room Types</h2>
+    <ul>
+      <li>3 Sharing Room</li>
+      <li>5 Sharing Room</li>
+      <li>6 Sharing Room</li>
+    </ul>
+  </section>
+
+  <section id="rules" class="tab">
+    <h2>Rules and Regulations</h2>
+    <p>To be updated.</p>
+  </section>
+
+  <section id="tariffs" class="tab">
+    <h2>Tariffs</h2>
+    <p>Please contact us for the latest pricing.</p>
+  </section>
+
+  <section id="gallery" class="tab">
+    <h2>Gallery</h2>
+    <p>Photos coming soon...</p>
+  </section>
+
+  <section id="contact" class="tab">
+    <h2>Contact Us</h2>
+    <p>📍 Near CHIL SEZ IT Park, Keeranatham, Coimbatore</p>
+    <p>📞 <a href="tel:+919487028065">Call 94870 28065</a></p>
+    <p>💬 <a href="https://wa.me/919487028065">WhatsApp Message</a></p>
+    <p>📧 <a href="mailto:srihariwomenshostel@gmail.com">srihariwomenshostel@gmail.com</a></p>
+    <iframe src="https://maps.google.com/maps?q=CHIL%20SEZ%20Keeranatham%2C%20Coimbatore&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </section>
+
+  <footer>© 2025 Sri Hari Women's Hostel</footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>

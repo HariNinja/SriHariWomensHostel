@@ -1,51 +1,58 @@
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fefefe;
-    color: #333;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
 }
-header.hero {
-    background: #f5f5f5;
-    text-align: center;
-    padding: 20px;
+header {
+  background: #FFD700; /* Yellowish gold */
+  text-align: center;
 }
 .poster {
-    max-width: 95%;
-    height: auto;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
-.hero-buttons a {
-    margin: 10px 10px 0;
-    padding: 12px 20px;
-    background: #000dff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    display: inline-block;
+.tabs {
+  background: #000dff;
+  text-align: center;
 }
-section {
-    padding: 40px 20px;
-    max-width: 960px;
-    margin: auto;
+.tabs button {
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
 }
-section h2 {
-    color: #c40000;
+.tabs button:hover {
+  background: #3333ff;
 }
-section ul, .grid {
-    padding-left: 20px;
-    margin-top: 15px;
+.tab {
+  display: none;
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
 }
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 15px;
+.tab.active {
+  display: block;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  margin-bottom: 10px;
 }
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    color: #fff;
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+}
+a {
+  color: #000dff;
+  text-decoration: none;
 }
