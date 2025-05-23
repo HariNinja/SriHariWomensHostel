@@ -85,3 +85,25 @@ footer {
   margin-top: auto;
 }
 
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+.facility-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.facility-item img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+.facility-item span {
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+}
