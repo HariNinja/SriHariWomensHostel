@@ -1,102 +1,41 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sri Hari Women's Hostel</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img src="poster.jpeg" class="poster" alt="Sri Hari Women's Hostel Poster"/>
-  </header>
-
-  <nav class="tabs">
-    <button onclick="showTab('about')">About</button>
-    <button onclick="showTab('facilities')">Facilities</button>
-    <button onclick="showTab('rooms')">Rooms</button>
-    <button onclick="showTab('gallery')">Gallery</button>
-    <button onclick="showTab('contact')">Contact</button>
-  </nav>
-
-  <section id="about" class="tab active">
-    <h2>About Us</h2>
-    <p>Sri Hari Women's Hostel is a family-run place where every guest is treated like one of our own. Designed for students and working women, it offers a peaceful environment that feels like home.</p>
-    <p><strong>📍 Location:</strong> <a href="https://maps.app.goo.gl/j5HK1Kj6gNi6hHjA8" target="_blank">Near CHIL SEZ IT Park, Keeranatham, Coimbatore</a></p>
-    <p><strong>📧 Email:</strong> <a href="mailto:srihariwomenshostel@gmail.com">srihariwomenshostel@gmail.com</a></p>
-    <p><strong>📞 Phone:</strong> <a href="tel:+919487028065">94870 28065</a></p>
-  </section>
-
-  
 <section id="facilities" class="tab">
   <h2>Facilities & Amenities</h2>
   <div class="facility-grid">
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/wifi.png"/><span>High Speed Wi-Fi</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/lock-2.png"/><span>24×7 Security</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/cctv.png"/><span>Camera Surveillance</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/bedroom.png"/><span>Furnished Rooms</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/laundry.png"/><span>Washing Machine</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/clean.png"/><span>Housekeeping</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/water-bottle.png"/><span>Drinking Water</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/electrical.png"/><span>Electricity</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/group-foreground-selected.png"/><span>3/5/6 Sharing</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/hot-tub.png"/><span>Hot Water</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/restaurant.png"/><span>Meal/No Meal</span></div>
-    <div class="facility-item"><img src="https://img.icons8.com/ios-filled/50/home.png"/><span>PG Available</span></div>
+    <div class="facility-item">
+      <img src="icons/wifi.png" alt="Wi-Fi"><span>High Speed Wi-Fi</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/security.png" alt="Security"><span>24×7 Security</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/camera.png" alt="Camera"><span>Camera Surveillance</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/bed.png" alt="Rooms"><span>Furnished Rooms</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/washing.png" alt="Washing"><span>Washing Machine</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/housekeeping.png" alt="Housekeeping"><span>Housekeeping</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/water.png" alt="Water"><span>Drinking Water</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/electricity.png" alt="Electricity"><span>Electricity</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/sharing.png" alt="Sharing"><span>3/5/6 Sharing</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/hotwater.png" alt="Hot Water"><span>Hot Water</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/meal.png" alt="Meal"><span>Meal/No Meal</span>
+    </div>
+    <div class="facility-item">
+      <img src="icons/pg.png" alt="PG"><span>PG Available</span>
+    </div>
   </div>
 </section>
-
-
-  <section id="rooms" class="tab">
-    <h2>Rooms & Tariffs</h2>
-    <p>3 / 5 / 6 sharing options with flexible food plans. Contact us for tariff details.</p>
-  </section>
-
-  <section id="gallery" class="tab">
-    <h2>Photo Gallery</h2>
-    <div id="gallery-grid"></div>
-  </section>
-
-  <section id="contact" class="tab">
-    <h2>Enquiry Form</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyRU4bIQ-SK-8DGT1E-QcnIA_BPH-mSmQrTyy2QANxTgn4ew/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </section>
-
-  <footer>© 2025 Sri Hari Women's Hostel</footer>
-
-  <script>
-    function showTab(id) {
-      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
-
-<script>
-async function loadGallery() {
-  const container = document.getElementById('gallery-grid');
-  const apiURL = 'https://api.github.com/repos/HariNinja/SriHariWomensHostel/contents/gallery';
-
-  try {
-    const res = await fetch(apiURL);
-    const files = await res.json();
-
-    files.forEach(file => {
-      if (file.name.endsWith('.jpg') || file.name.endsWith('.jpeg') || file.name.endsWith('.png')) {
-        const img = document.createElement('img');
-        img.src = `https://raw.githubusercontent.com/HariNinja/SriHariWomensHostel/main/gallery/${file.name}`;
-        img.alt = file.name;
-        img.className = 'gallery-thumb';
-        container.appendChild(img);
-      }
-    });
-  } catch (error) {
-    container.innerHTML = '<p style="color:red;">Error loading gallery images.</p>';
-  }
-}
-document.addEventListener('DOMContentLoaded', loadGallery);
-</script>
-
-</body>
-</html>
