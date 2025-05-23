@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 header {
-  background: #FFD700; /* Yellowish gold */
+  background: #FFD700;
   text-align: center;
 }
 .poster {
@@ -14,7 +14,7 @@ header {
   height: auto;
 }
 .tabs {
-  background: #000dff;
+  background: #0c2d7a;
   text-align: center;
 }
 .tabs button {
@@ -27,7 +27,7 @@ header {
   font-size: 16px;
 }
 .tabs button:hover {
-  background: #3333ff;
+  background: #1c3e94;
 }
 .tab {
   display: none;
@@ -55,4 +55,21 @@ footer {
 a {
   color: #000dff;
   text-decoration: none;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+form button {
+  background: #000dff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
 }
