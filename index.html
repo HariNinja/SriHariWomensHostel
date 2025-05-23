@@ -70,5 +70,31 @@
       document.getElementById(id).classList.add('active');
     }
   </script>
+
+<script>
+async function loadGallery() {
+  const container = document.getElementById('gallery-grid');
+  const apiURL = 'https://api.github.com/repos/HariNinja/SriHariWomensHostel/contents/gallery';
+
+  try {
+    const res = await fetch(apiURL);
+    const files = await res.json();
+
+    files.forEach(file => {
+      if (file.name.endsWith('.jpg') || file.name.endsWith('.jpeg') || file.name.endsWith('.png')) {
+        const img = document.createElement('img');
+        img.src = `https://raw.githubusercontent.com/HariNinja/SriHariWomensHostel/main/gallery/${file.name}`;
+        img.alt = file.name;
+        img.className = 'gallery-thumb';
+        container.appendChild(img);
+      }
+    });
+  } catch (error) {
+    container.innerHTML = '<p style="color:red;">Error loading gallery images.</p>';
+  }
+}
+document.addEventListener('DOMContentLoaded', loadGallery);
+</script>
+
 </body>
 </html>
