@@ -8,7 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <!-- Your existing CSS -->
   <link rel="stylesheet" href="style.css" />
-</head>
+
+    <style>
+    .emoji-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .facility-item {
+        font-size: 18px;
+    }
+    .facility-item .emoji {
+        font-size: 36px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    </style>
+    </head>
+
 <body>
   <!-- HEADER -->
   <header>
@@ -35,7 +54,8 @@
     </p>
     <p><strong>📧 Email:</strong> <a href="mailto:srihariwomenshostel@gmail.com">srihariwomenshostel@gmail.com</a></p>
     <p><strong>📞 Phone:</strong> <a href="tel:+919487028065">94870 28065</a></p>
-  </section>
+  </div>
+</section>
 
   <!-- FACILITIES & AMENITIES -->
   <section id="facilities" class="tab">
