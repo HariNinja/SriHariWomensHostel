@@ -6,7 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ladies Hostel in Keeranatham – Sri Hari Women's PG near Chil SEZ, Coimbatore</title>
   <meta name="description" content="Sri Hari Women’s Hostel in Keeranatham offers secure, affordable PG accommodation for working women and students near Chil SEZ, Coimbatore." />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>body { font-family: "Poppins", sans-serif; }
+  <style>
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 30px;
+      color: #2c3e50;
+      text-align: center;
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 20px;
+      color: #34495e;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 1em;
+    }
+  </style>
+
+</style>
   <link rel="stylesheet" href="style.css" />
   <style>
     .three-column-list {
@@ -23,6 +47,46 @@
       text-align: center;
     }
   </style>
+
+  <style>
+    .three-column-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      list-style: none;
+      padding-left: 0;
+    }
+    .three-column-list li {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .accordion-toggle {
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 1em;
+      display: block;
+    }
+    .accordion-toggle::before {
+      content: "▶ ";
+    }
+    .accordion-toggle.open::before {
+      content: "▼ ";
+    }
+    .accordion-content {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function toggleAccordion(element) {
+      element.classList.toggle("open");
+      const content = element.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
 </head>
 <body>
 
@@ -56,7 +120,8 @@
     </ul>
 
     <!-- MAJOR COMPANIES GRID -->
-    <h3>🏢 Major Companies Nearby (0.5–1 km Range)</h3>
+    <h3 class="accordion-toggle" onclick="toggleAccordion(this)">🏢 Major Companies Nearby (0.5–1 km Range)</h3>
+<div class="accordion-content">
     <ul class="three-column-list">
       <li>Amazon</li>
       <li>Bosch</li>
@@ -72,7 +137,9 @@
     </ul>
 
     <!-- NEARBY ESSENTIALS GRID -->
-    <h3>👣 Nearby Essentials Within Walking Distance</h3>
+    </div>
+<h3 class="accordion-toggle" onclick="toggleAccordion(this)">👣 Nearby Essentials Within Walking Distance</h3>
+<div class="accordion-content">
     <ul class="three-column-list">
       <li>CHIL SEZ – 2 mins</li>
       <li>GR Bakery – 100 m</li>
@@ -84,7 +151,8 @@
       <li>Cafe Coffee Day (inside IndiaLand Tech Park)</li>
     </ul>
 
-    <p><strong>📍 Location:</strong> <a href="https://maps.app.goo.gl/j5HK1Kj6gNi6hHjA8" target="_blank">Near CHIL SEZ IT Park, Keeranatham, Coimbatore</a></p>
+    </div>
+<p><strong>📍 Location:</strong> <a href="https://maps.app.goo.gl/j5HK1Kj6gNi6hHjA8" target="_blank">Near CHIL SEZ IT Park, Keeranatham, Coimbatore</a></p>
     <p><strong>📧 Email:</strong> <a href="mailto:srihariwomenshostel@gmail.com">srihariwomenshostel@gmail.com</a></p>
     <p><strong>📞 Phone:</strong> <a href="tel:+919487028065">94870 28065</a></p>
   </section>
