@@ -21,7 +21,7 @@
       text-align: center;
     }
     header img {
-      height: 90px;
+      height: 120px; padding: 10px 0;
     }
     .contact {
       text-align: center;
@@ -160,7 +160,7 @@
 <body>
   <div class="page-wrapper">
   <header>
-    <img src="blue-header.jpeg" alt="Sri Hari Women's Hostel Banner">
+    <img loading="lazy" src="blue-header.jpeg" alt="Sri Hari Women's Hostel Banner">
   </header>
   <div class="contact">
     📞 94870 28065 / 93620 61115 &nbsp; | &nbsp; ✉️ srihariwomenshostel@gmail.com
@@ -217,23 +217,18 @@
     </div>
     </section>
 
-<section id="facilities" class="tab">
-  <h2>Facilities & Amenities</h2>
-  <div class="facility-grid">
-    <div class="facility-item"><span class="emoji">📶</span><p>High Speed Wi-Fi</p></div>
-    <div class="facility-item"><span class="emoji">🔐</span><p>24×7 Security</p></div>
-    <div class="facility-item"><span class="emoji">🎥</span><p>Camera Surveillance</p></div>
-    <div class="facility-item"><span class="emoji">🛏️</span><p>Furnished Rooms</p></div>
-    <div class="facility-item"><span class="emoji">🧺</span><p>Washing Machine</p></div>
-    <div class="facility-item"><span class="emoji">🧼</span><p>Housekeeping</p></div>
-    <div class="facility-item"><span class="emoji">🚰</span><p>Drinking Water</p></div>
-    <div class="facility-item"><span class="emoji">⚡</span><p>Electricity</p></div>
-    <div class="facility-item"><span class="emoji">👭</span><p>3 / 5 / 6 Sharing</p></div>
-    <div class="facility-item"><span class="emoji">🔥</span><p>Hot Water</p></div>
-    <div class="facility-item"><span class="emoji">🍽️</span><p>With / Without Meal</p></div>
-    <div class="facility-item"><span class="emoji">🏠</span><p>Paying Guest Available</p></div>
-  </div>
-</section>
+ <section id="facilities" class="tab">
+
+    <h2>Facilities & Amenities</h2>
+      <ul class="three-column-list">
+            <ul class="three-column-list">
+        <li>📶 High Speed Wi-Fi</li><li>🔐 24×7 Security</li><li>🎥 Camera Surveillance</li>
+        <li>🛏️ Fully Furnished Rooms</li><li>🧺 Washing Machine</li><li>🧼 Housekeeping</li>
+        <li>🚰 Purified Water</li><li>⚡ Unbroken Electricity</li><li>👭 Shared Rooms (3/5/6)</li>
+        <li>🔥 24×7 Hot Water</li><li>🍽️ Meals Optional</li><li>🏠 PG & Hostel Combo</li>
+      </ul>
+
+  </section>
 
     <section id="rooms" class="tab">
       <h2>Rooms</h2>
@@ -242,11 +237,14 @@
 
   <!-- GALLERY -->
   <section id="gallery" class="tab">
+
+      <div class="gallery">
+        <img loading="lazy" src="gallery/Night building pic.jpeg" alt="Night View">
+      </div>
+
+
     <h2>Photo Gallery</h2>
     <div id="gallery-grid"></div>
-      <div class="gallery">
-        <img src="gallery/Night building pic.jpeg" alt="Night View">
-      </div>
   </section>
 
 
@@ -268,7 +266,7 @@
   <footer>© 2025 Sri Hari Women's Hostel</footer>
 
   <a href="https://wa.me/919487028065" target="_blank" id="whatsapp-button">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
   <script>

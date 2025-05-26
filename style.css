@@ -26,3 +26,43 @@
   font-weight: 500;
   color: #333;
 }
+
+/* Facility item hover animation */
+.facility-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.facility-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab button hover effect */
+nav button {
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+nav button:hover {
+  color: #8e44ad;
+  border-bottom: 2px solid #8e44ad;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 480px) {
+  .facility-grid {
+    grid-template-columns: 1fr;
+  }
+  header img {
+    height: 100px !important;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* Font loading optimization */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
