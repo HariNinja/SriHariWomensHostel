@@ -90,6 +90,21 @@
       flex-direction: column;
     }
 
+    
+    .three-column-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      list-style: none;
+      padding: 0;
+    }
+    .three-column-list li {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
     footer {
       background: #f1f1f1;
       text-align: center;
@@ -174,6 +189,14 @@
     </section>
 
  <section id="facilities" class="tab">
+
+      <ul class="three-column-list">
+        <li>📶 High Speed Wi-Fi</li><li>🔐 24×7 Security</li><li>🎥 Camera Surveillance</li>
+        <li>🛏️ Fully Furnished Rooms</li><li>🧺 Washing Machine</li><li>🧼 Housekeeping</li>
+        <li>🚰 Purified Water</li><li>⚡ Unbroken Electricity</li><li>👭 Shared Rooms (3/5/6)</li>
+        <li>🔥 24×7 Hot Water</li><li>🍽️ Meals Optional</li><li>🏠 PG & Hostel Combo</li>
+      </ul>
+
     <h2>Facilities & Amenities</h2>
     <div class="facility-grid">
     <div class="facility-item"><span class="emoji">📶</span><p>High Speed Wi-Fi</p></div>
@@ -198,6 +221,12 @@
 
   <!-- GALLERY -->
   <section id="gallery" class="tab">
+
+      <div class="gallery">
+        <img src="gallery/Night building pic.jpeg" alt="Night View">
+      </div>
+
+
     <h2>Photo Gallery</h2>
     <div id="gallery-grid"></div>
   </section>
