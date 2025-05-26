@@ -48,16 +48,23 @@ nav button:hover {
 /* Mobile responsive tweaks */
 @media (max-width: 600px) {
   .facility-grid {
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
   }
-  header img {
-    height: 100px !important;
+
+  .facility-item {
+    padding: 12px;
+    font-size: 0.95rem;
   }
-  nav {
-    flex-wrap: wrap;
-    gap: 10px;
+
+  .facility-item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
+
 
 /* Font loading optimization */
 @font-face {
