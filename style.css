@@ -46,7 +46,7 @@ nav button:hover {
 }
 
 /* Mobile responsive tweaks */
-@media (max-width: 600px) {
+@media (max-width: 430px) {
   .facility-grid {
     display: grid;
     grid-template-columns: 1fr;
