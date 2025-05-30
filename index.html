@@ -264,14 +264,51 @@
       <p>Choose from 3 / 5 / 6 sharing types. Neat beds, wardrobes, fans, and clean bathrooms included. Meals optional.</p>
     </section>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="tab">
-    <h2>Photo Gallery</h2>
-    <div id="gallery-grid"></div>
-      <div class="gallery">
-        <img src="gallery/Night building pic.jpeg" alt="Night View">
-      </div>
-  </section>
+<!-- GALLERY -->
+<section id="gallery" class="tab">
+  <h2>Photo Gallery</h2>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <img src="gallery/Night building pic.jpeg" alt="Night View">
+      <img src="gallery/SriHari_HostelBoard_OutsideView.jpg" alt="Full building view">
+      <!-- Add more images here -->
+    </div>
+  </div>
+</section>
+
+<style>
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background: #f8f8f8;
+  padding: 10px 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 10px;
+  animation: scroll 40s linear infinite;
+}
+
+.carousel-track img {
+  height: 250px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
 
 
   <!-- CONTACT FORM -->
