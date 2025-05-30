@@ -264,31 +264,59 @@
       <p>Choose from 2/ 3 / 5 / 6 sharing types. Neat beds, wardrobes, fans, and clean bathrooms included. Meals optional.</p>
     </section>
 
+
 <!-- GALLERY -->
 <section id="gallery" class="tab">
   <h2>Photo Gallery</h2>
   <div class="carousel-container">
     <div class="carousel-track">
-      
-      <div class="carousel-item">
-        <img src="gallery/Night building pic.jpeg" alt="Night View">
-      </div>
-      
-      <div class="carousel-item">
-        <img src="gallery/SriHari_HostelBoard_OutsideView.jpg.jpeg" alt="Full building view">
-      </div>
-
-      <div class="carousel-item">
-        <img src="gallery/Flyer.png" alt="Hostel Flyer">
-      </div>
-
-      <div class="carousel-item">
-        <img src="gallery/FB_CoverPhoto.png" alt="Facebook Cover">
-      </div>
-
+      <img src="gallery/Night building pic.jpeg" alt="Night View">
+      <img src="gallery/SriHari_HostelBoard_OutsideView.jpg.jpeg" alt="Full building view">
+      <img src="gallery/Flyer.png" alt="Hostel Flyer">
+      <img src="gallery/FB_CoverPhoto.png" alt="Facebook Cover">
+      <!-- Duplicate for seamless loop -->
+      <img src="gallery/Night building pic.jpeg" alt="Night View Copy">
+      <img src="gallery/SriHari_HostelBoard_OutsideView.jpg.jpeg" alt="Full building view Copy">
+      <img src="gallery/Flyer.png" alt="Flyer Copy">
+      <img src="gallery/FB_CoverPhoto.png" alt="Facebook Cover Copy">
     </div>
   </div>
 </section>
+
+<style>
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background: #f8f8f8;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 60s linear infinite;
+  width: max-content;
+}
+
+.carousel-track img {
+  height: 350px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
 
 <style>
 #gallery h2 {
