@@ -11,16 +11,15 @@
   <meta name="robots" content="index, follow" />
 
   <!-- ============================================================
-       SOCIAL SHARE PREVIEW (Open Graph + Twitter)
+       SOCIAL SHARE PREVIEW (Open Graph)
        Controls the preview card on WhatsApp, Facebook, Instagram DM, etc.
-       IMPORTANT: replace the two URLs below with your FULL live domain
-       once hosted. Social platforms need ABSOLUTE URLs for the image.
+       Domain set to your live site: sriharihostel.com
   ============================================================ -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Sri Hari Women's Hostel — Ladies Hostel &amp; PG near CHIL SEZ, Coimbatore" />
   <meta property="og:description" content="Safe PG for working women &amp; students. 24×7 security, Wi-Fi, meals optional. 500 m from CHIL SEZ IT Park, Keeranatham, Saravanampatti." />
-  <meta property="og:image" content="https://srihariwomenshostel.com/gallery/FB_CoverPhoto.png" />
-  <meta property="og:url" content="https://srihariwomenshostel.com/" />
+  <meta property="og:image" content="https://sriharihostel.com/gallery/FB_CoverPhoto.png" />
+  <meta property="og:url" content="https://sriharihostel.com/" />
   <meta property="og:locale" content="en_IN" />
 
   <!-- Favicon and App Icons -->
@@ -40,7 +39,7 @@
     "name": "Sri Hari Women's Hostel",
     "alternateName": "Sri Hari Ladies Hostel & PG",
     "description": "Safe, budget-friendly ladies hostel and PG accommodation for working women and students in Keeranatham, Saravanampatti, Coimbatore, near CHIL SEZ IT Park.",
-    "image": "https://srihariwomenshostel.com/gallery/FB_CoverPhoto.png",
+    "image": "https://sriharihostel.com/gallery/FB_CoverPhoto.png",
     "email": "srihariwomenshostel@gmail.com",
     "telephone": "+91-90432-42395",
     "priceRange": "₹₹",
@@ -172,6 +171,48 @@
     }
     .google-reviews-btn:hover { background: #763b8f; }
 
+    /* ---- Room cards ---- */
+    .rooms-intro { text-align:center; max-width:680px; margin:0 auto 24px; line-height:1.7; color:var(--muted); }
+    .rooms-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:20px; }
+    .room-card {
+      background:#fff; border:1px solid #eee; border-top:5px solid var(--gold);
+      border-radius:12px; padding:22px; text-align:center;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; flex-direction:column;
+    }
+    .room-card h3 { margin:0 0 4px; font-size:1.25rem; }
+    .room-card .occupancy { font-size:1.6rem; margin:6px 0; }
+    .room-price { font-size:1.5rem; font-weight:800; color:var(--accent); margin:8px 0 2px; }
+    .room-price small { font-size:0.8rem; font-weight:600; color:var(--muted); }
+    .room-card ul { list-style:none; padding:0; margin:14px 0; text-align:left; font-size:0.9rem; line-height:1.9; }
+    .room-card ul li::before { content:"✓ "; color:#1d9e75; font-weight:700; }
+    .room-enquire {
+      margin-top:auto; text-decoration:none; background:#25D366; color:#fff;
+      font-weight:700; padding:10px 16px; border-radius:24px; display:inline-block;
+    }
+    .room-enquire:hover { background:#1da851; }
+    .rooms-note {
+      margin-top:24px; background:var(--gold-soft); border-radius:10px;
+      padding:16px 20px; font-size:0.92rem; line-height:1.7; text-align:center;
+    }
+
+    /* ---- Why choose us / comparison ---- */
+    .why-us { margin:30px 0 8px; }
+    .why-us .section-title { text-align:center; font-size:1.4rem; color:var(--ink); margin:0 0 4px; font-weight:800; }
+    .why-sub { text-align:center; color:var(--muted); margin:0 auto 22px; max-width:600px; line-height:1.6; }
+    .compare-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .compare-card { border-radius:12px; padding:20px; }
+    .compare-card h4 { margin:0 0 2px; font-size:1.05rem; }
+    .compare-card .tier-price { font-size:0.85rem; color:var(--muted); margin-bottom:12px; }
+    .compare-card ul { list-style:none; padding:0; margin:0; line-height:1.95; font-size:0.92rem; }
+    .compare-basic { background:#f4f4f4; border:1px solid #e6e6e6; }
+    .compare-basic h4 { color:#777; }
+    .compare-basic ul li::before { content:"✕ "; color:#c0392b; font-weight:700; }
+    .compare-ours { background:var(--gold-soft); border:2px solid var(--gold); }
+    .compare-ours h4 { color:var(--accent); }
+    .compare-ours ul li::before { content:"✓ "; color:#1d9e75; font-weight:700; }
+    .no-hidden { text-align:center; margin-top:18px; background:var(--accent); color:#fff; padding:14px 18px; border-radius:10px; font-weight:700; font-size:0.98rem; }
+    @media (max-width:600px){ .compare-grid { grid-template-columns:1fr; } }
+
     /* ---- Gallery marquee ---- */
     #gallery h2 { font-size: 2rem; margin-bottom: 20px; }
     .carousel-container { overflow: hidden; width: 100%; position: relative; background: #f8f8f8; padding: 20px 0; border-radius: 10px; }
@@ -241,6 +282,39 @@
         <p>📧 Email: <a href="mailto:srihariwomenshostel@gmail.com">srihariwomenshostel@gmail.com</a></p>
         <p>📞 <strong>Primary phone:</strong> <a href="tel:+919043242395">90432 42395</a><br />
            📞 <strong>Secondary:</strong> <a href="tel:+919487028065">94870 28065</a>, <a href="tel:+919362061115">93620 61115</a></p>
+
+        <div class="why-us">
+          <p class="section-title">Why Choose Sri Hari</p>
+          <p class="why-sub">A cheaper bed usually means a bunk in a crowded room. We're built differently — real beds, room to breathe, and one honest all-inclusive price.</p>
+          <div class="compare-grid">
+            <div class="compare-card compare-basic">
+              <h4>Typical Budget Bunk PG</h4>
+              <div class="tier-price">around ₹4,800 / bed</div>
+              <ul>
+                <li>Bunk beds, 5–6 crowded per room</li>
+                <li>Little space to move around</li>
+                <li>Dim, poorly ventilated rooms</li>
+                <li>Shared common bathrooms</li>
+                <li>Wi-Fi / food often charged extra</li>
+                <li>Hidden add-on charges</li>
+              </ul>
+            </div>
+            <div class="compare-card compare-ours">
+              <h4>Sri Hari Women's Hostel</h4>
+              <div class="tier-price">from ₹8,500 / month — all-inclusive</div>
+              <ul>
+                <li>Real furnished beds — no bunks</li>
+                <li>Spacious rooms with space to move</li>
+                <li>Bright, naturally lit &amp; ventilated</li>
+                <li>Attached bathrooms</li>
+                <li>Wi-Fi, hot water, housekeeping, power backup — included</li>
+                <li>Home-style meals (optional plan)</li>
+                <li>24×7 security &amp; caring warden</li>
+              </ul>
+            </div>
+          </div>
+          <div class="no-hidden">One transparent price. No hidden charges — what you see is what you pay.</div>
+        </div>
 
         <h3 class="accordion-toggle" tabindex="0" role="button" aria-expanded="false" onclick="toggleAccordion(this)" onkeydown="accordionKey(event, this)">🏢 Major Companies Nearby (0.5–1 km Range)</h3>
         <div class="accordion-content">
@@ -316,8 +390,74 @@
       </section>
 
       <section id="rooms" class="tab">
-        <h2>Rooms</h2>
-        <p style="text-align:center; max-width:680px; margin:0 auto; line-height:1.7;">Choose from 2 / 3 / 5 / 6 sharing types. Neat beds, wardrobes, fans, and clean bathrooms included. Meals optional. Daily / Monthly stay available.</p>
+        <h2>Rooms &amp; Tariff</h2>
+        <p class="rooms-intro">Choose the sharing option that suits you. Every room comes furnished with a cot, mattress, wardrobe, and fan, with clean shared bathrooms, hot water, and daily housekeeping. Meals are optional, and both daily and monthly stays are available.</p>
+
+        <!-- ============================================================
+             FILL IN YOUR REAL PRICES below (replace ₹____).
+             Mark AC / Non-AC and "with food / without food" as it applies.
+             Delete any sharing type you don't offer.
+        ============================================================ -->
+        <div class="rooms-grid">
+          <div class="room-card">
+            <h3>2-Sharing</h3>
+            <div class="occupancy">👥</div>
+            <div class="room-price">₹____ <small>/ month</small></div>
+            <ul>
+              <li>Most privacy, 2 beds</li>
+              <li>Wardrobe &amp; study space</li>
+              <li>AC / Non-AC option</li>
+              <li>Food optional</li>
+            </ul>
+            <a class="room-enquire" href="https://wa.me/919043242395?text=Hi,%20I'm%20interested%20in%20a%202-sharing%20room" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </div>
+
+          <div class="room-card">
+            <h3>3-Sharing</h3>
+            <div class="occupancy">👥👤</div>
+            <div class="room-price">₹____ <small>/ month</small></div>
+            <ul>
+              <li>Balanced comfort &amp; cost</li>
+              <li>Individual wardrobe each</li>
+              <li>AC / Non-AC option</li>
+              <li>Food optional</li>
+            </ul>
+            <a class="room-enquire" href="https://wa.me/919043242395?text=Hi,%20I'm%20interested%20in%20a%203-sharing%20room" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </div>
+
+          <div class="room-card">
+            <h3>5-Sharing</h3>
+            <div class="occupancy">👥👥👤</div>
+            <div class="room-price">₹____ <small>/ month</small></div>
+            <ul>
+              <li>Budget-friendly</li>
+              <li>Spacious shared room</li>
+              <li>Great for students</li>
+              <li>Food optional</li>
+            </ul>
+            <a class="room-enquire" href="https://wa.me/919043242395?text=Hi,%20I'm%20interested%20in%20a%205-sharing%20room" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </div>
+
+          <div class="room-card">
+            <h3>6-Sharing</h3>
+            <div class="occupancy">👥👥👥</div>
+            <div class="room-price">₹____ <small>/ month</small></div>
+            <ul>
+              <li>Most economical</li>
+              <li>Friendly group living</li>
+              <li>Great for students</li>
+              <li>Food optional</li>
+            </ul>
+            <a class="room-enquire" href="https://wa.me/919043242395?text=Hi,%20I'm%20interested%20in%20a%206-sharing%20room" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="rooms-note">
+          🍽️ <strong>Food:</strong> Home-style vegetarian meals available on an optional plan (₹____ / month). &nbsp;•&nbsp;
+          🗓️ <strong>Stay:</strong> Daily stay from ₹____ / day. &nbsp;•&nbsp;
+          💳 <strong>Deposit:</strong> ₹____ refundable (one-time). &nbsp;<br>
+          Prices are indicative — call <a href="tel:+919043242395">90432 42395</a> for current availability and exact tariff.
+        </div>
       </section>
 
       <section id="gallery" class="tab">
